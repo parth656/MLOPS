@@ -1,45 +1,196 @@
-# ---- Secrets / Environment ----
-.env
-*.env
-
-# ---- Virtual Environment ----
-.venv/
-venv/
-env/
-venv/
-# ---- Python cache ----
+# RAG
+persist/
+storage/
+index/
+vector_db/
+faiss/
+chroma_db/
+.cache/
+# ======================================
+# Python
+# ======================================
 __pycache__/
 *.py[cod]
 *$py.class
-*.pyc
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# ---- Vector DB / Local data ----
-chroma_db/
-*.sqlite3
-*.faiss
+# ======================================
+# Virtual Environments
+# ======================================
+venv/
+.venv/
+env/
+ENV/
+.virtualenv/
 
-# ---- Logs ----
-*.log
-logs/
+# ======================================
+# Environment Variables
+# ======================================
+.env
+.env.*
+!.env.example
 
-# ---- Jupyter / Notebook ----
-.ipynb_checkpoints/
-
-# ---- Testing / Coverage ----
-.pytest_cache/
-.coverage
-htmlcov/
-
-# ---- IDE / Editor ----
+# ======================================
+# IDEs
+# ======================================
 .vscode/
 .idea/
 *.swp
+*.swo
+*.code-workspace
 
-# ---- OS files ----
+# ======================================
+# Jupyter
+# ======================================
+.ipynb_checkpoints/
+
+# ======================================
+# Logs
+# ======================================
+logs/
+*.log
+
+# ======================================
+# Testing
+# ======================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ======================================
+# Type Checkers
+# ======================================
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ======================================
+# Packaging
+# ======================================
+pip-wheel-metadata/
+
+# ======================================
+# OS Files
+# ======================================
 .DS_Store
 Thumbs.db
+.desktop
+.Trash-*
+*~
 
-# ---- Build / Distribution ----
-build/
-dist/
-*.egg-info/
+# ======================================
+# AI/ML Models
+# ======================================
+models/
+checkpoints/
+weights/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.bin
+*.gguf
+*.safetensors
+
+# ======================================
+# Vector Databases
+# ======================================
+chroma/
+chroma_db/
+faiss_index/
+vectorstore/
+db/
+*.faiss
+
+# ======================================
+# Data
+# ======================================
+data/
+datasets/
+cache/
+*.csv
+*.xlsx
+*.parquet
+
+# ======================================
+# Hugging Face
+# ======================================
+.huggingface/
+hf_cache/
+
+# ======================================
+# LangChain
+# ======================================
+.langchain/
+
+# ======================================
+# Streamlit
+# ======================================
+.streamlit/secrets.toml
+
+# ======================================
+# FastAPI / Uvicorn
+# ======================================
+uvicorn.log
+
+# ======================================
+# Node (if frontend exists)
+# ======================================
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# ======================================
+# Docker
+# ======================================
+.docker/
+docker-compose.override.yml
+
+# ======================================
+# Temporary Files
+# ======================================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ======================================
+# Archives
+# ======================================
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# ======================================
+# Secrets
+# ======================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+artifacts/
+venv/
