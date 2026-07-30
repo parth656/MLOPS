@@ -194,3 +194,4 @@ temp/
 *.pfx
 artifacts/
 venv/
+venv/
