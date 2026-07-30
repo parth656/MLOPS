@@ -1,0 +1,45 @@
+# ---- Secrets / Environment ----
+.env
+*.env
+
+# ---- Virtual Environment ----
+.venv/
+venv/
+env/
+venv/
+# ---- Python cache ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# ---- Vector DB / Local data ----
+chroma_db/
+*.sqlite3
+*.faiss
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Jupyter / Notebook ----
+.ipynb_checkpoints/
+
+# ---- Testing / Coverage ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Build / Distribution ----
+build/
+dist/
+*.egg-info/
