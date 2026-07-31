@@ -195,3 +195,7 @@ temp/
 artifacts/
 venv/
 venv/
+reports/
+mlruns/
+.dvc/
+venv/
